@@ -15,8 +15,8 @@ open Kanban_fr.png
 - no command line solution to convert png to svg
 - open Inkscape  
 1 - File / Document property (^+cmd+D) / page / Arch B  
-2 - open template.png   
-3 - save as template.svg   
+2 - open Kanban_fr.png   
+3 - save as Kanban_fr.svg   
 
 # Templates export and configuration  
 ## copy files from mac to rM  
@@ -26,18 +26,19 @@ scp Kanban_fr.svg root@192.168.1.20:/usr/share/remarkable/templates/Kanban_fr.sv
 ```
 
 ## update of configuration file '.json'  
-- for organisational template use icons "\ue9dc" "\ue9da" "\ue9db"
-
-- ouvrir le fichier .json sur la rM  
+- connect rM tablet via wifi (check id with arp -a)  
 ```sh
 ssh root@192.168.1.20 
+```
+- connect rM tablet via usb cable
+```sh
 ssh root@10.11.99.1 
+```
+- open .json file with nano
+```sh
 nano /usr/share/remarkable/templates/templates.json
 ```
-- ajouter à la fin du fichier config (juste avant '] }' ) le texte suivant en adaptant le non de fichier
-- ne pas donner le même "name" pour deux templates différents
-- ne pas oublier la virgule entre bloques successifs
-- une même icône peut être utilisée pour plusieurs templates
+- paste at the en of the configuration file (juste before '] }' ) the following lines
 ```
 ,
     {
@@ -49,6 +50,9 @@ nano /usr/share/remarkable/templates/templates.json
       ]
     }
 ```
+- don't give the same name "name" for different templates
+- the same icon may be used for several templates
+- for organisational template use icons "\ue9dc" "\ue9da" "\ue9db"
 - save and close  
 ^O ^X
-- reboot rM
+- reboot reMarkable tablet
