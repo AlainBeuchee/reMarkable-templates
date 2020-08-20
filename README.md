@@ -38,6 +38,7 @@ nano /usr/share/remarkable/templates/templates.json
 - ne pas donner le même "name" pour deux templates différents
 - ne pas oublier la virgule entre bloques successifs
 - une même icône peut être utilisée pour plusieurs templates
+```
 ,
     {
       "name": "Kanban 4",
@@ -47,6 +48,7 @@ nano /usr/share/remarkable/templates/templates.json
         "Perso"
       ]
     }
+```
 - save and close  
 ^O ^X
 - reboot rM
