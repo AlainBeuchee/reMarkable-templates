@@ -1,7 +1,6 @@
 # rM-templates
 Templates for reMarkable tablet.  
-Suppose our template is Kanban_fr.png.  
-Put your terminal in working directory were is the template 'Kanban_fr.png'.  
+Supposing template's name is Kanban_fr.png and you terminal is located in directory were Kanban_fr.png or .jpg is.   
 
 # Templates preparation  
 ## convert and resize  
