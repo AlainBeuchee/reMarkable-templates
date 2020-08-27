@@ -3,6 +3,7 @@ Templates for reMarkable tablet.
 Supposing template's name is Kanban_fr.png and you terminal is located in directory were Kanban_fr.png or .jpg is.   
 
 # Templates preparation  
+Can be skipped if template is already 1404x1872 px
 ## convert and resize  
 - ratio 3:4 i.e. 1404x1872 centered and filled with a white background    
 
