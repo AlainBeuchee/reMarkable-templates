@@ -7,7 +7,7 @@ Supposing template's name is Kanban_fr.png and you terminal is located in direct
 - ratio 3:4 i.e. 1404x1872 centered and filled with a white background    
 
 ```sh
-magick Kanban_fr.jpg -resize 1404x1872 -background white -compose Copy -gravity center -extent 1404x1872 -unsharp 0x1 -quality 92 template.png; open Kanban_fr.png
+magick Kanban_fr.jpg -resize 1404x1872 -background white -compose Copy -gravity center -extent 1404x1872 -unsharp 0x1 -quality 92 Kanban_fr.png; open Kanban_fr.png
 open Kanban_fr.png  
 ```
 ## convert png en svg  
@@ -22,6 +22,8 @@ open Kanban_fr.png
 ```sh
 scp Kanban_fr.png root@192.168.1.20:/usr/share/remarkable/templates/Kanban_fr.png  
 scp Kanban_fr.svg root@192.168.1.20:/usr/share/remarkable/templates/Kanban_fr.svg  
+scp Kanban_en.png root@192.168.1.20:/usr/share/remarkable/templates/Kanban_en.png  
+scp Kanban_en.svg root@192.168.1.20:/usr/share/remarkable/templates/Kanban_en.svg  
 ```
 
 ## update of configuration file '.json'  
@@ -38,10 +40,17 @@ ssh root@10.11.99.1
 nano /usr/share/remarkable/templates/templates.json
 ```
 - paste at the en of the configuration file (juste before '] }' ) the following lines
-```
-,
+```,
     {
-      "name": "Kanban 4",
+      "name": "Kanban (en)",
+      "filename": "Kanban_en",
+      "iconCode": "\ue9db",
+      "categories": [
+        "Perso"
+      ]
+    },
+    {
+      "name": "Kanban (fr)",
       "filename": "Kanban_fr",
       "iconCode": "\ue9db",
       "categories": [
